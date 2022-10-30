@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(238, 238, 238);
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+    height: 4rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: rgb(238, 238, 238);
+    z-index: 1;
+    height: auto;
+}
+
+#header-img {
+    width: 18em;
+    margin-left: 3.5vw;
+    margin-top: 0.2rem;
+}
+
+#nav-bar>ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.nav-link {
+    margin: 4.8vh 4vw;
+    text-decoration: none;
+    color: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 7rem;
+}
+
+#email {
+    height: 1.5rem;
+    width: 17rem;
+}
+
+#submit {
+    margin-top: 1rem;
+    border: 0;
+    padding: 0.4rem 1.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #f1c40f;
+}
+
+#benefits {
+    width: 62%;
+    margin: 0 auto 5rem;
+}
+
+.benefit {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+
+.benefit>img {
+    width: 3.5rem;
+    margin-right: 5rem;
+}
+
+.orange-filter {
+    filter: invert(75%) sepia(63%) saturate(4895%) hue-rotate(358deg) brightness(98%) contrast(108%);
+}
+
+.benefit-text>h2 {
+    margin-bottom: 0;
+}
+
+.benefit-text>p {
+    margin-top: 0;
+}
+
+.video {
+    display: block;
+    margin: 0 auto 5rem;
+}
+
+#product-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product-profile {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: calc(70% / 3);
+    margin: 10px;
+}
+
+.product-profile>h3 {
+    background-color: #dddddd;
+    padding: 1rem;
+    margin: 0;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.specs {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.specs>li {
+    margin: 0.5rem 0;
+}
+
+.select {
+    display: block;
+    padding: 0.7rem 1.2rem;
+    margin: 2rem auto 1rem;
+    font-size: 1rem;
+    background-color: #f1c40f;
+    border: 0
+}
+
+footer {
+    display: block;
+    width: 67%;
+    margin: 2.5rem auto 0;
+    padding: 1rem 0;
+    background-color: #dddddd;
+}
+
+#footer-nav>ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    float: right;
+    margin: 0 2rem 0.5rem;
+}
+
+#footer-nav>ul>li {
+    margin: 0;
+    font-size: 15px;
+}
+
+.footer-link {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: black;
+}
+
+#copy {
+    text-align: end;
+    margin: 0;
+    color: rgb(85, 85, 85);
+    font-size: 0.9rem;
+    padding-right: 1rem;
+    clear: both;
+}
+
+@media (max-width: 950px) {
+
+    #product-list {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .product-profile {
+        margin-bottom: 2rem;
+        width: calc(100% / 3);
+    }
+}
+
+@media (max-width: 754px) {
+
+    .product-profile {
+        margin-bottom: 2rem;
+        width: calc(150% / 3);
+    }
+
+    #nav-bar>ul {
+        display: block;
+        text-align: center;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+
+    header {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #header-img {
+        display: block;
+        margin: 1rem auto 0;
+    }
+
+    #nav-bar {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #nav-bar>ul {
+        padding: 0;
+    }
+
+    #nav-bar>ul>li {
+        margin: 0.3rem 0;
+    }
+
+    form {
+        margin: 0 auto 2rem;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    .benefit-text {
+        margin: 0 -3.8rem;
+    }
+
+    .benefit>img {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .product-profile {
+        margin-bottom: 2rem;
+        width: calc(200% / 3);
+    }
+
+    footer {
+        width: 100%;
+    }
+}
