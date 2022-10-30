@@ -1,6 +1,6 @@
 # freeCodeCamp-product-landing
 
-This project is a clone of <a href="https://product-landing-page.freecodecamp.rocks/">product-landing-page</a> on freeCodeCamp.
+This project is a clone of <a href="https://product-landing-page.freecodecamp.rocks/" target="_blank">product-landing-page</a> on freeCodeCamp.
 
 I tried to replicate not using PixelPerfect, just looking at it.
 
